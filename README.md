@@ -84,6 +84,7 @@ O Mellyx é uma ferramenta **defensiva**, voltada à **detecção** de atividade
 ## Licença
 
 [MIT License](./LICENSE)
+Componentes de terceiros (Cowrie, OpenCanary) e seus avisos de copyright estão em [THIRD_PARTY_LICENSES](./THIRD_PARTY_LICENSES.md).
 
 ---
 
