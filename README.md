@@ -84,6 +84,7 @@ O Mellyx é uma ferramenta **defensiva**, voltada à **detecção** de atividade
 ## Licença
 
 [MIT License](./LICENSE)
+
 ---
 
 ## Autor
