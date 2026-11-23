@@ -1,0 +1,38 @@
+name: Bug
+description: Algo que não se comporta como o esperado
+title: "bug: <resumo>"
+labels: [bug]
+body:
+  - type: dropdown
+    id: componente
+    attributes:
+      label: Componente
+      options: [Agente, Manager (API), Frontend, Banco, Isca (Cowrie/OpenCanary), Laboratório, CI]
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      placeholder: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: obtido
+    attributes:
+      label: Resultado obtido
+      description: Inclua logs ou prints, sem senhas, tokens ou IPs de ambientes reais
+    validations:
+      required: true
+  - type: input
+    id: versao
+    attributes:
+      label: Commit ou versão

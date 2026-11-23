@@ -1,0 +1,55 @@
+name: Tarefa
+description: Uma tarefa do planejamento (fase, incremento, validação ou documentação)
+title: "<código> <título curto>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Os códigos (F1 a F4, I0 a I6, V, D, RF, RNF, RN...) estão explicados em `doc/gh-project-planejamento/legenda-plan.md`.
+        As horas são minhas estimativas e podem sair maiores; ao fechar a issue, registro as horas reais.
+  - type: dropdown
+    id: grupo
+    attributes:
+      label: Grupo
+      options: [F1, F2, F3, F4, I0, I1, I2, I3, I4, I5, I6, V, D]
+    validations:
+      required: true
+  - type: input
+    id: horas-planejadas
+    attributes:
+      label: Horas planejadas
+      placeholder: "6"
+    validations:
+      required: true
+  - type: input
+    id: horas-reais
+    attributes:
+      label: Horas reais
+      value: "_preencher ao fechar_"
+  - type: input
+    id: rastreabilidade
+    attributes:
+      label: Rastreabilidade
+      description: RF, RNF, RN, UC, T ou E que esta tarefa atende
+      placeholder: "RF04, RNF02, RN04"
+  - type: textarea
+    id: o-que
+    attributes:
+      label: O que vou fazer
+    validations:
+      required: true
+  - type: textarea
+    id: pronto
+    attributes:
+      label: Pronto quando
+      description: Critérios de aceite verificáveis; sempre que der, um teste automatizado na CI
+      value: |
+        - [ ] 
+        - [ ] Testes na CI cobrindo o comportamento novo
+    validations:
+      required: true
+  - type: input
+    id: depende
+    attributes:
+      label: Depende de
+      placeholder: "#NN"

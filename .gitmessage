@@ -1,0 +1,19 @@
+# <tipo>(<escopo opcional>): <descrição no imperativo, em português, até ~72 caracteres>
+#
+# <corpo opcional: o porquê da mudança, não o como>
+#
+# Refs #<issue>   ou   Closes #<issue>
+#
+# Tipos (Conventional Commits, https://www.conventionalcommits.org/pt-br/v1.0.0/):
+#   feat     funcionalidade nova
+#   fix      correção de bug
+#   docs     só documentação
+#   test     testes novos ou ajustados
+#   refactor mudança de código sem mudar comportamento
+#   ci       pipeline do GitHub Actions
+#   build    dependências, Dockerfile, compose
+#   chore    manutenção (gitignore, configurações)
+# Escopos sugeridos: agente, api, frontend, banco, lab, ci, docs
+# Exemplo: feat(agente): reconcilia instâncias pelo SDK do Docker
+#
+# Ativar este modelo: git config commit.template .gitmessage
