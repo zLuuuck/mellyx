@@ -3,11 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 PoC/
-doc/abntex/
-doc/referencias/
 doc/gh-project-planejamento/plano-github-eap-v4.md
 .claude/
 doc/gh-project-planejamento/interno/
+doc/interno/
 
 # C extensions
 *.so
