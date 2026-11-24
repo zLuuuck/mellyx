@@ -11,11 +11,11 @@ flowchart LR
     F["F1 a F4<br/>especificação"] --> I0
     I0 --> I1 --> I2 --> I3 --> I4 --> I5 --> I6 --> V --> D
 
-    I0 -. fecha .-> M1(["M1 · arquitetura executável"])
-    I4 -. fecha .-> M2(["M2 · MVP"])
-    V -. fecha .-> M3(["M3 · validação"])
-    D -. fecha .-> M4(["M4 · defesa"])
-    I0 -. em paralelo .-> P1(["P1 · Projeto Lógico"])
+    I0 -. fecha .-> M1(["M1: arquitetura executável"])
+    I4 -. fecha .-> M2(["M2: MVP"])
+    V -. fecha .-> M3(["M3: validação"])
+    D -. fecha .-> M4(["M4: defesa"])
+    I0 -. em paralelo .-> P1(["P1: Projeto Lógico"])
 ```
 
 ### Este planejamento não é fixo
